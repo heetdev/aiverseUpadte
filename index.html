@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiverse</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="logo">AIverse</div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#tools" class="nav-link">Tools</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Page -->
+    <div id="mainPage">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1>Discover AI Tools</h1>
+            <p>Explore the best AI software for your creative needs</p>
+        </section>
+
+        <!-- Tools Section Header -->
+        <section class="tools-section" id="tools">
+            <div class="section-header">
+                <h2>Explore by Category</h2>
+                <p>Find the perfect AI tool for your project</p>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories" id="categories">
+                <button class="category-btn active" data-category="all">All Tools</button>
+                <button class="category-btn" data-category="website">🌐 Website Making</button>
+                <button class="category-btn" data-category="image">🎨 Image Making</button>
+                <button class="category-btn" data-category="video">🎬 Video Making</button>
+                <button class="category-btn" data-category="text">✍️ Text Generation</button>
+                <button class="category-btn" data-category="audio">🎙️ Audio Creation</button>
+                <button class="category-btn" data-category="code">💻 Code Assistant</button>
+                <button class="category-btn" data-category="productivity">⚙️ Productivity</button>
+            </div>
+
+            <!-- Tools Grid -->
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Website Making Tools -->
+                <a href="#" class="tool-card" data-category="website" data-tool="10web">
+                    <div class="tool-icon">🌐</div>
+                    <h3>10Web</h3>
+                    <p>AI-powered website builder that creates professional websites in minutes.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="framer">
+                    <div class="tool-icon">✨</div>
+                    <h3>Framer AI</h3>
+                    <p>Design and publish stunning websites with AI assistance.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="wix">
+                    <div class="tool-icon">🎨</div>
+                    <h3>Wix ADI</h3>
+                    <p>Artificial Design Intelligence creates personalized websites.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="durable">
+                    <div class="tool-icon">⚡</div>
+                    <h3>Durable AI</h3>
+                    <p>Build a website in 30 seconds with AI.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="bookmark">
+                    <div class="tool-icon">📑</div>
+                    <h3>Bookmark AiDA</h3>
+                    <p>AI assistant that builds websites in minutes.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="webflow">
+                    <div class="tool-icon">🔷</div>
+                    <h3>Webflow AI</h3>
+                    <p>Professional website builder with AI copywriting.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="hostinger">
+                    <div class="tool-icon">🚀</div>
+                    <h3>Hostinger AI</h3>
+                    <p>AI website builder with hosting included.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="website" data-tool="unicorn">
+                    <div class="tool-icon">🦄</div>
+                    <h3>Unicorn Platform</h3>
+                    <p>AI-powered landing page builder.</p>
+                </a>
+
+                <!-- Image Making Tools -->
+                <a href="#" class="tool-card" data-category="image" data-tool="midjourney">
+                    <div class="tool-icon">🎨</div>
+                    <h3>Midjourney</h3>
+                    <p>Create stunning AI-generated artwork from text descriptions.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="dalle">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>DALL-E 3</h3>
+                    <p>Generate highly detailed images from text prompts.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="canva">
+                    <div class="tool-icon">🎭</div>
+                    <h3>Canva AI</h3>
+                    <p>Design graphics with AI-powered templates and tools.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="leonardo">
+                    <div class="tool-icon">🖌️</div>
+                    <h3>Leonardo AI</h3>
+                    <p>Generate production-quality visual assets with AI.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="ideogram">
+                    <div class="tool-icon">💫</div>
+                    <h3>Ideogram</h3>
+                    <p>AI image generator with excellent text rendering.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="playground">
+                    <div class="tool-icon">🎪</div>
+                    <h3>Playground AI</h3>
+                    <p>Free AI image creator for art and designs.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="stable">
+                    <div class="tool-icon">🌈</div>
+                    <h3>Stable Diffusion</h3>
+                    <p>Open-source AI image generation model.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="adobe">
+                    <div class="tool-icon">🔴</div>
+                    <h3>Adobe Firefly</h3>
+                    <p>Adobe's AI art generator with commercial safety.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="clipdrop">
+                    <div class="tool-icon">✂️</div>
+                    <h3>ClipDrop</h3>
+                    <p>AI-powered image editing and generation tools.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="image" data-tool="photoleap">
+                    <div class="tool-icon">📸</div>
+                    <h3>Photoleap</h3>
+                    <p>AI photo editor with advanced creative tools.</p>
+                </a>
+
+                <!-- Video Making Tools -->
+                <a href="#" class="tool-card" data-category="video" data-tool="runway">
+                    <div class="tool-icon">🎬</div>
+                    <h3>Runway ML</h3>
+                    <p>Create and edit videos using AI technology.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="synthesia">
+                    <div class="tool-icon">📹</div>
+                    <h3>Synthesia</h3>
+                    <p>Create professional videos with AI avatars.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="descript">
+                    <div class="tool-icon">🎞️</div>
+                    <h3>Descript</h3>
+                    <p>Edit videos by editing text transcripts.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="pictory">
+                    <div class="tool-icon">📺</div>
+                    <h3>Pictory</h3>
+                    <p>Turn scripts and articles into videos automatically.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="invideo">
+                    <div class="tool-icon">🎥</div>
+                    <h3>InVideo AI</h3>
+                    <p>Create videos from text prompts instantly.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="heygen">
+                    <div class="tool-icon">👤</div>
+                    <h3>HeyGen</h3>
+                    <p>AI video generator with customizable avatars.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="fliki">
+                    <div class="tool-icon">🎙️</div>
+                    <h3>Fliki</h3>
+                    <p>Text to video and voiceover creation.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="video" data-tool="colossyan">
+                    <div class="tool-icon">🎭</div>
+                    <h3>Colossyan</h3>
+                    <p>AI video creator for workplace learning.</p>
+                </a>
+
+                <!-- Text Generation Tools -->
+                <a href="#" class="tool-card" data-category="text" data-tool="chatgpt">
+                    <div class="tool-icon">💬</div>
+                    <h3>ChatGPT</h3>
+                    <p>Advanced conversational AI for writing and coding.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="jasper">
+                    <div class="tool-icon">✍️</div>
+                    <h3>Jasper AI</h3>
+                    <p>AI writing assistant for marketing copy.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="claude">
+                    <div class="tool-icon">🤖</div>
+                    <h3>Claude</h3>
+                    <p>AI assistant for analysis and creative writing.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="copy">
+                    <div class="tool-icon">📝</div>
+                    <h3>Copy.ai</h3>
+                    <p>Generate marketing copy with AI.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="writesonic">
+                    <div class="tool-icon">🚀</div>
+                    <h3>Writesonic</h3>
+                    <p>AI writer for articles, ads, and content.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="rytr">
+                    <div class="tool-icon">✏️</div>
+                    <h3>Rytr</h3>
+                    <p>Affordable AI writing assistant.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="notion">
+                    <div class="tool-icon">📚</div>
+                    <h3>Notion AI</h3>
+                    <p>AI writing assistant built into Notion.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="text" data-tool="grammarly">
+                    <div class="tool-icon">✅</div>
+                    <h3>Grammarly</h3>
+                    <p>AI-powered writing assistant and grammar checker.</p>
+                </a>
+
+                <!-- Audio Creation Tools -->
+                <a href="#" class="tool-card" data-category="audio" data-tool="elevenlabs">
+                    <div class="tool-icon">🎙️</div>
+                    <h3>ElevenLabs</h3>
+                    <p>Generate realistic voice-overs with AI.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="murf">
+                    <div class="tool-icon">🔊</div>
+                    <h3>Murf AI</h3>
+                    <p>Create studio-quality voiceovers.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="play">
+                    <div class="tool-icon">🎵</div>
+                    <h3>Play.ht</h3>
+                    <p>Realistic text-to-speech AI voice generator.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="wellsaid">
+                    <div class="tool-icon">🗣️</div>
+                    <h3>WellSaid Labs</h3>
+                    <p>AI voice platform for enterprise.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="resemble">
+                    <div class="tool-icon">🎤</div>
+                    <h3>Resemble AI</h3>
+                    <p>AI voice generator with voice cloning.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="speechify">
+                    <div class="tool-icon">📖</div>
+                    <h3>Speechify</h3>
+                    <p>Text to speech for listening to documents.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="suno">
+                    <div class="tool-icon">🎶</div>
+                    <h3>Suno AI</h3>
+                    <p>Generate complete songs from text prompts.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="audio" data-tool="soundraw">
+                    <div class="tool-icon">🎼</div>
+                    <h3>Soundraw</h3>
+                    <p>AI music generator for creators.</p>
+                </a>
+
+                <!-- Code Assistant Tools -->
+                <a href="#" class="tool-card" data-category="code" data-tool="github">
+                    <div class="tool-icon">💻</div>
+                    <h3>GitHub Copilot</h3>
+                    <p>AI pair programmer for code completion.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="code" data-tool="cursor">
+                    <div class="tool-icon">⚡</div>
+                    <h3>Cursor</h3>
+                    <p>AI-first code editor for rapid development.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="code" data-tool="tabnine">
+                    <div class="tool-icon">🔷</div>
+                    <h3>Tabnine</h3>
+                    <p>AI code completion for all languages.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="code" data-tool="codeium">
+                    <div class="tool-icon">🚀</div>
+                    <h3>Codeium</h3>
+                    <p>Free AI code acceleration toolkit.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="code" data-tool="replit">
+                    <div class="tool-icon">🤖</div>
+                    <h3>Replit AI</h3>
+                    <p>Build and deploy software with AI assistance.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="code" data-tool="amazon">
+                    <div class="tool-icon">📦</div>
+                    <h3>Amazon CodeWhisperer</h3>
+                    <p>AI coding companion from AWS.</p>
+                </a>
+
+                <!-- Productivity Tools -->
+                <a href="#" class="tool-card" data-category="productivity" data-tool="otter">
+                    <div class="tool-icon">🦦</div>
+                    <h3>Otter.ai</h3>
+                    <p>AI meeting notes and transcription.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="fireflies">
+                    <div class="tool-icon">🔥</div>
+                    <h3>Fireflies.ai</h3>
+                    <p>Record and transcribe meetings automatically.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="beautiful">
+                    <div class="tool-icon">📊</div>
+                    <h3>Beautiful.ai</h3>
+                    <p>AI-powered presentation maker.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="gamma">
+                    <div class="tool-icon">✨</div>
+                    <h3>Gamma</h3>
+                    <p>Create presentations with AI in seconds.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="bardeen">
+                    <div class="tool-icon">⚙️</div>
+                    <h3>Bardeen</h3>
+                    <p>Automate workflows with AI.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="zapier">
+                    <div class="tool-icon">⚡</div>
+                    <h3>Zapier AI</h3>
+                    <p>Automate tasks between apps with AI.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="mem">
+                    <div class="tool-icon">🧠</div>
+                    <h3>Mem</h3>
+                    <p>AI-powered note-taking and knowledge base.</p>
+                </a>
+
+                <a href="#" class="tool-card" data-category="productivity" data-tool="superhuman">
+                    <div class="tool-icon">📧</div>
+                    <h3>Superhuman</h3>
+                    <p>AI-powered email client for productivity.</p>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="aboutPage" class="about-page">
+        <button class="back-btn-about">
+            <span>←</span> Back to Tools
+        </button>
+        
+        <div class="about-content">
+            <div class="about-header">
+                <h1>About AIverse</h1>
+                <p class="about-subtitle">Your Gateway to AI Innovation</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-section">
+                    <h2>What is AIverse?</h2>
+                    <p>AIverse is a comprehensive platform designed to help you discover and explore the best AI tools available today. We've curated an extensive collection of artificial intelligence applications across multiple categories, making it easy for you to find the perfect tool for your creative and professional needs.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Our Mission</h2>
+                    <p>We believe AI should be accessible to everyone. Our mission is to demystify artificial intelligence by showcasing real-world tools and applications that you can use today to enhance your productivity, creativity, and capabilities.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Categories We Cover</h2>
+                    <ul class="about-list">
+                        <li>🌐 Website Making - Build stunning sites with AI</li>
+                        <li>🎨 Image Making - Generate artwork and visuals</li>
+                        <li>🎬 Video Making - Create professional videos</li>
+                        <li>✍️ Text Generation - Write like never before</li>
+                        <li>🎙️ Audio Creation - Produce sounds and music</li>
+                        <li>💻 Code Assistant - Code faster with AI</li>
+                        <li>⚙️ Productivity - Automate and optimize workflows</li>
+                    </ul>
+                </div>
+
+                <div class="about-section">
+                    <h2>Why Choose AIverse?</h2>
+                    <ul class="about-list">
+                        <li><strong>Curated Selection:</strong> We handpick the best tools</li>
+                        <li><strong>Easy Navigation:</strong> Find tools by category instantly</li>
+                        <li><strong>Detailed Info:</strong> Learn what each tool can do</li>
+                        <li><strong>Always Updated:</strong> New tools added regularly</li>
+                        <li><strong>User-Friendly:</strong> Works on any device</li>
+                    </ul>
+                </div>
+
+                <div class="about-section">
+                    <h2>Get Started</h2>
+                    <p>Explore our tool library and discover AI solutions tailored to your needs. Whether you're a creative professional, developer, or business owner, AIverse has something for you. Browse through our categories and find the perfect AI tool to transform your workflow.</p>
+                    <button class="cta-btn" onclick="showToolsPage()">Explore Tools</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Page -->
+    <div id="detailPage" class="detail-page">
+        <button class="back-btn">
+            <span>←</span> Back to Tools
+        </button>
+        
+        <div class="detail-content">
+            <div class="detail-icon" id="detailIcon"></div>
+            <h1 id="detailTitle"></h1>
+            <p class="detail-category" id="detailCategory"></p>
+            <div class="detail-description" id="detailDescription"></div>
+            
+            <div class="detail-info-section">
+                <h3>Pricing</h3>
+                <p id="detailPricing">Free trial available. Check official website for current pricing.</p>
+            </div>
+
+            <div class="detail-info-section">
+                <h3>Best For</h3>
+                <p id="detailBestFor">Creative professionals, businesses, and individuals</p>
+            </div>
+
+            <div class="detail-info-section">
+                <h3>Contact & Support</h3>
+                <p><strong>Email:</strong> <span id="detailEmail">contact@aiverse.io</span></p>
+                <p><strong>Website:</strong> <span id="detailWebsite">Visit official website</span></p>
+            </div>
+
+            <a href="#" class="try-btn" id="tryBtn" target="_blank">Try Me →</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AIverse</h3>
+                <p>Discover the best AI tools for your creative and professional needs.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-contact">
+                    <li>📧 Email: <a href="mailto:support@aiverse.io">heetjaiveer@aiverse.io</a></li>
+                    <li>📱 Phone: 9082084128</li>
+                    <li>📍 Location: MUMBAI (SBMP)</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Discord</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AIverse. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="web.js"></script>
+</body>
+</html>
